@@ -24,6 +24,7 @@ This is the main page of the ACL-IJCNLP 2022 paper:  [**WikiDiverse: A Multimoda
   - [Dataset](#Dataset)
     - [Get the Data](#get-the-data)
     - [Data Format](Data-format)
+- [Benchmark](#benchmark)
 - [Citation](#Citation)
 
 ## Overview
@@ -65,14 +66,17 @@ WikiDiverse is a high-quality human-annotated MEL dataset with diversified conte
 ]
 ```
 
+## Benchmark
+
+To be added
 
 
 ## Citation
 
-If you use Few-NERD in your work, please cite our paper:
+If you use WikiDiverse in your work, please cite our paper:
 
 ```bibtex
-@inproceedings{wang2022wiki,
+@inproceedings{wang2022wikidiverse,
 title={WikiDiverse: A Multimodal Entity Linking Dataset with Diversified Contextual Topics and Entity Types},
 author={Wang, Xuwu and Tian, Junfeng and Gui, Min and Li, Zhixu and Wang, Rui and Yan, Ming and Chen, Lihan and Xiao, Yanghua},
 booktitle={ACL-IJCNLP},
