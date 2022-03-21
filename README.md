@@ -5,7 +5,7 @@
 
 
 
-This is the main page of the ACL-IJCNLP 2022 paper:  [**WikiDiverse: A Multimodal Entity Linking Dataset with Diversified Contextual Topics and Entity Types**]().
+This is the main page of the ACL 2022 paper:  [**WikiDiverse: A Multimodal Entity Linking Dataset with Diversified Contextual Topics and Entity Types**]().
 
 
 
@@ -36,12 +36,14 @@ WikiDiverse is a high-quality human-annotated MEL dataset with diversified conte
 
 ### Get the Data
 
-- Train: [Google Drive for Train Data](https://drive.google.com/file/d/1VNGM8Wa-7E0qUnAM0wdh2S9ICHP62rKd/view?usp=sharing)
-- Valid: [Google Drive for Valid Data](https://drive.google.com/file/d/1nEqGMPhpEBSTYqroE99mMwharzuHN5A2/view?usp=sharing)
-- Test: [Google Drive for Test Data](https://drive.google.com/file/d/1ovRStLZ8CIWcpK3BnSFdpXO7OPzgyFC7/view?usp=sharing)
+- The annotated data: [Google Drive](https://drive.google.com/file/d/1jsoa994_8tW9X19pb1cISKrMG8hTwItv/view?usp=sharing)
+- The data with retrieved 10 cands: to be released.
+- The Wikipedia data: to be released.
+- The image files: to be released.
 
 ### Data Format
 
+- The annotated data
 ```json
 [
     "The Lions versus the Packers (2007).",
@@ -79,7 +81,7 @@ If you use WikiDiverse in your work, please cite our paper:
 @inproceedings{wang2022wikidiverse,
 title={WikiDiverse: A Multimodal Entity Linking Dataset with Diversified Contextual Topics and Entity Types},
 author={Wang, Xuwu and Tian, Junfeng and Gui, Min and Li, Zhixu and Wang, Rui and Yan, Ming and Chen, Lihan and Xiao, Yanghua},
-booktitle={ACL-IJCNLP},
+booktitle={ACL},
 year={2022}
 }
 ```
