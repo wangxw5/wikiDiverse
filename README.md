@@ -5,7 +5,7 @@
 
 
 
-This is the main page of the ACL-IJCNLP 2022 paper:  [**WikiDiverse: A Multimodal Entity Linking Dataset with Diversified Contextual Topics and Entity Types**]().
+This is the main page of the ACL 2022 paper:  [**WikiDiverse: A Multimodal Entity Linking Dataset with Diversified Contextual Topics and Entity Types**]().
 
 
 
@@ -85,7 +85,7 @@ If you use WikiDiverse in your work, please cite our paper:
 @inproceedings{wang2022wikidiverse,
 title={WikiDiverse: A Multimodal Entity Linking Dataset with Diversified Contextual Topics and Entity Types},
 author={Wang, Xuwu and Tian, Junfeng and Gui, Min and Li, Zhixu and Wang, Rui and Yan, Ming and Chen, Lihan and Xiao, Yanghua},
-booktitle={ACL-IJCNLP},
+booktitle={ACL},
 year={2022}
 }
 ```
