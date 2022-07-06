@@ -76,7 +76,7 @@ WikiDiverse is a high-quality human-annotated MEL dataset with diversified conte
 ```
 
 - The data with cands (mention level)
-```json
+```python
 [
     "Bart writing \"HDTV is worth every cent\" in the \"chalkboard gag.\".", # sentence
     "https://upload.wikimedia.org/wikinews/en/c/ca/Simpsons_new_title_sequence_screenshot.png", # img_url
@@ -85,12 +85,13 @@ WikiDiverse is a high-quality human-annotated MEL dataset with diversified conte
     ['bart', 'writing'], # list of left context
     [' ', 'be', 'worth', 'every', 'cent', 'in', 'the', 'chalkboard', 'gag'], # list of right context
     "https://en.wikipedia.org/wiki/High-definition_television", # entity url
-    [...], # list of candidates
+    [], # list of candidates
     "entertainment", # topic
     14, # mention start position
     18, # mention end position
 ]
 ```
+  (To evaluate the recall of the candidates, please refer to eval_cands_recall.py)
 
 - How to get the wikinews imgs
 ```python
@@ -106,7 +107,18 @@ for item in data:
 
 ## Benchmark
 
-To be added
+###Statistics and Leaderboard
+
+|        |  Train  |  Valid  |   Test  |
+|  ----  |   ----  |   ----  |   ----  |
+| # instance (sent level)  | 6312 | 755 | 757 |
+| # instance (ment level)  | 13205 | 1552 | 1570 |
+| # ment per instance      | 2.09 | 2.06 | 2.07 |
+| R@10 of candidate retrieval  | 88.62% | 89.17% | 88.01% |
+| F1 of entity disambiguation  |   -    | 74.19% | 73.34% |
+
+
+Others to be added
 
 
 ## Citation
