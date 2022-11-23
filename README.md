@@ -43,7 +43,7 @@ WikiDiverse is a high-quality human-annotated MEL dataset with diversified conte
 - The data with retrieved 10 cands: [Google Drive](https://drive.google.com/file/d/1ATTF_AzYAnUlM1N84S_dtFu-y867CELY/view?usp=sharing)
 - The Wikipedia data: 
     * Entity2desc (filtered): [Google Drive](https://drive.google.com/file/d/1LKjcWrU6YdFfLX6iKi0cFKtyhf4t2bbe/view?usp=sharing) (split with '@@@@')
-    * The original Wikipedia information: to be released.
+    * The original Wikipedia information: [Quark Drive](https://pan.quark.cn/s/d6a7b66efe21) (tsv format, split with '@@@@').
 - The image files:
     * Wikinews: the downloaded and cleaned imgs can be found in [Google Drive](https://drive.google.com/file/d/1Xg7HxKbvhfKWrrHOYi2-59tE634ILTph/view?usp=sharing)
     * Wikipedia: the alignment between entity names and image URLs: [Google Drive](https://drive.google.com/file/d/1ukoThqll410GG3P0I7-29kg299OzYgOT/view?usp=sharing) (split with '@@@@')
@@ -103,6 +103,24 @@ for item in data:
   suffix = re.sub(r'(\S+(?=\.(jpg|JPG|png|PNG|svg|SVG)))|(\S+(?=\.(jpeg|JPEG)))', '', m_img)
   m_img = 'path to wikinewsImgs' + prefix + suffix
   m_img = m_img.replace('.svg', '.png').replace('.SVG', '.png')
+```
+
+- The original Wikipedia info (entity level)
+```python
+[
+    # entity description with EL annotations
+    'The Ugaritic alphabet is a cuneiform{"title": "Cuneiform", "url": "https://en.wikipedia.org//wiki/Cuneiform", "text": "cuneiform"} abjad{"title": "Abjad", "url": "https://en.wikipedia.org//wiki/Abjad", "text": "abjad"} (consonantal alphabet) used from around either the fifteenth century BCE...', 
+    # entity description without EL annotations
+    'The Ugaritic alphabet is a cuneiform abjad (consonantal alphabet) used from around either the fifteenth century BCE ....', 
+    # main-image list, each item includes an image URL and the caption (may containing EL annotations).
+    '[["https://upload.wikimedia.org/wikipedia/commons/0/04/22_alphabet.jpg", "The Ugaritic Alphabet"], ["https://upload.wikimedia.org/wikipedia/en/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg", ""]]',
+    # entity name
+    'Ugaritic alphabet', 
+    # entity URL
+    'https://en.wikipedia.org/wiki/Ugaritic_alphabet', 
+    # list of other images in the page, each item includes an image URL and the caption (may containing EL annotations).
+    [["https://upload.wikimedia.org/wikipedia/commons/b/b0/Literacy.PNG", "Dark green shows approximate spread of writing by 1300 BCE"], ["https://upload.wikimedia.org/wikipedia/commons/d/dd/Ugaritic-alphabet-chart.svg", "Ugaritic alphabet"]]，
+]
 ```
 
 ## Benchmark
