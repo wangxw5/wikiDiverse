@@ -44,6 +44,7 @@ WikiDiverse is a high-quality human-annotated MEL dataset with diversified conte
 - The Wikipedia data: 
     * Entity2desc (filtered): [Google Drive](https://drive.google.com/file/d/1LKjcWrU6YdFfLX6iKi0cFKtyhf4t2bbe/view?usp=sharing) (split with '@@@@')
     * The original Wikipedia information: [Quark Drive](https://pan.quark.cn/s/d6a7b66efe21) (tsv format, split with '@@@@').
+    * The P(e|m) data: [Google Drive](https://drive.google.com/file/d/1Ss9cGb5c3nZtfzJvbFV_0-lEk1USBAAb/view?usp=sharing)
 - The image files:
     * Wikinews: the downloaded and cleaned imgs can be found in [Google Drive](https://drive.google.com/file/d/1Xg7HxKbvhfKWrrHOYi2-59tE634ILTph/view?usp=sharing)
     * Wikipedia: the alignment between entity names and image URLs: [Google Drive](https://drive.google.com/file/d/1ukoThqll410GG3P0I7-29kg299OzYgOT/view?usp=sharing) (split with '@@@@')
